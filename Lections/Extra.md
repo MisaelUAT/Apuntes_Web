@@ -17,3 +17,7 @@ console.log(nombre);
  // Poner simepre la palabra clave typeof seguido de la variable
  console.log(typeof edad);
 ```
+
+## Conceptos Especiales
+
+**1.2 Compilador:** Es un programa que traduce el codigo de un lenguaje de programacion a otro lenguaje que entiendan las maquinas.

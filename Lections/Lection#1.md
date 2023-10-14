@@ -103,7 +103,8 @@ var condicion= false;
 ![Booleanos](/Assets/img/variables6.png)
 
 ## Indefinidas
-Este tipo de datos son aquellos en las que la variable esta declarada pero no asignada a **ningun valor**. Por ejemplo:
+
+Es aquella que ha sido declarada pero no ha sido inicializada con un valor. Por ejemplo, si declaras una variable de la siguiente manera:
 
 ```js
 var numero;
@@ -112,3 +113,12 @@ var nombre;
 
 ![Indefinidas](/Assets/img/variables7.png)
 
+## Nulas
+Este tipo de datos son aquellos en las que la variable esta declarada pero no asignada a **ningun valor**. Por ejemplo:
+
+```js
+var numero= null;
+var nombre= null;
+```
+
+![Nulas](/Assets/img/variables8.png)

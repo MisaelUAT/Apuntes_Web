@@ -1,2 +1,3 @@
-var num_1;
-var num_2;
+var edad;
+edad = 18;
+alert(edad);
