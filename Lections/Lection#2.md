@@ -68,3 +68,33 @@ alert(hello);
 **Como se va a mostrar en tu pagina:**
 
 ![Alert](/Assets/img/alert.png)
+
+### Document Write
+Este comando nos permite mostrar un mensaje en pantalla pero no podemos ingresar un valor.
+    
+```js
+// Imprimir Texto
+document.write("Misael");
+// Imprimir Variables
+var edad= 18;
+document.write(edad);
+```
+> Este comando no es recomendado que se use debido a que los cambios en el futuro se boraran y no se podran ver.
+
+![Document.write](/Assets/img/document_write.png)
+
+### InnerHTML
+Este comando nos permite manipular un elemento de nuestro codigo html y mostrar el resultado donde esta la etiqueta que lo contiene.
+
+![Innerhtml](/Assets/img/get_element.png)
+
+![Innerhtml](/Assets/img/html_getelement.png)
+
+
+> Para usar este comando se necesita que el elemento html tenga el mismo **ID** en el que se va a poner dentro del metodo.
+
+**Asi se veria en la pagina:**
+
+![Innerhtml](/Assets/img/pagina_inner.png)
+
+
