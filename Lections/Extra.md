@@ -1,5 +1,16 @@
 # Scripts Especiales
 
+**1. Formas de Enlazar Javascript con HTML:**
+- **Etiqueta script:** Este se pone al final de nuestro codigo ya que si se pone al principio, el navegador no cargara el resto de la pagina hasta que no se cargue el script. Ejemplo:
+![Etiqueta Script](/Assets/img/conexion_javascript.png)
+
+> Aqui lo que estamos haciendo es enlazar codigo javascript en el body para poder trabajar en el mismo documento html
+
+- **Archivo externo:** Este se enlaza con el html por medio de la etiqueta script pero con la novedad de que agregamos el atributo **_src_**. Ejemplo:
+
+![Archivo Externo](/Assets/img/conexion_javascript2.png)
+
+
 **1.1 typeof:** Sirve para saber el tipo de dato que almacena una cierta variable.
     
  ```js
@@ -80,3 +91,38 @@ var resultado= num_1 < num_2; // True
 |-------|-------|
 | true  | false |
 | false | true  |
+
+
+**1.6 If Anidados**
+Tambien se pueden anidar los if, es decir, poner un if dentro de otro if. Esto se hace cuando se quiere evaluar mas de una condicion. Ejemplo:
+```js
+// Variable a Usar
+var num_1= 10;
+// Condicion 1
+if(num_1 > 9){
+    // Condicion 2
+    if(num_1 < 11){
+        console.log("El numero es 10");
+    }
+}
+```
+**1.7 If con Operadores Logicos**
+Tambien se pueden utilizar los operadores logicos en los if. Esto se hace cuando se quiere evaluar mas de una condicion. Ejemplo:
+```js
+// Variable a Usar
+var num_1= 10;
+// Condicion 1 con operador logico AND
+if(num_1 > 9 && num_1 < 11){
+    console.log("El numero es 10");
+}
+// Condicion 2 con operador logico OR
+else if(num_1 > 9 || num_1 < 11){
+    console.log("El numero es 10");
+}
+
+// Condicion 3 con operador logico NOT
+else if(!(num_1 > 9)){
+    console.log("El numero es 10");
+}
+```
+
