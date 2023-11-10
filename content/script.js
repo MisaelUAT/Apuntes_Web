@@ -100,10 +100,10 @@ do {
 
   }
 
-  if(retry== 0){
+  if(retry== 2){
 
     alert("Thank you");
-    retry= 0;
+    retry= 2;
   }
   
 } while (retry == 1);
