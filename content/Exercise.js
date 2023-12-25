@@ -7,23 +7,22 @@ class Mascotas{
 
     }
 
-    static cambiarValores(){
-
-        this.Nombre= "Carlos";
-        this.Edad= 4 ;
-        this.Adopcion= false;
-        mostrarInformacion()
+    static cambiarValores(Nombre_Mostrar,Edad_Mostrar,Adopcion_Mostrar){
+        console.log(`El nombre es: ${Nombre_Mostrar} y
+        tiene: ${Edad_Mostrar} de edad y su adopcion es
+        ${Adopcion_Mostrar}`);
     }
 
 
-    mostrarInformacion(){
-
-        console.log(`El nombre es: ${this.Nombre} y
-        tiene: ${this.Edad} de edad y su adopcion es
-        ${this.Adopcion}`);
+    mostrarInformacion(nombre,edad,adopcion){
+        this.Nombre= nombre;
+        this.Edad= edad;
+        this.Adopcion= adopcion;
+        Mascotas.cambiarValores(nombre,edad,adopcion)
+       
     }
 }
 let perro = new Mascotas("Jacob",5,true);
-Mascotas.cambiarValores()
+perro.mostrarInformacion()
 
 
