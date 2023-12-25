@@ -113,3 +113,27 @@ class nombreClase {
 }
 ```
 > Ellos no dependen de los atributos de la clase para funcionar pero deben de estar dentro de ella.
+
+Ejemplo:
+
+![Ejemplo](/Assets/img/static.png)
+
+Las formas en que se invoquen son las siguientes:
+```js
+nombreClase.nombreMetodo(Parametros);
+```
+
+Ejemplo:
+
+![Ejemplo](/Assets/img/invocar-static.png)
+
+> Tambien puedes invocar metodos static  en metodos comunes.
+
+Ejemplo:
+
+![Ejemplo](/Assets/img/metodos_conjunto.png)
+
+## Getters y Setters
+Son aquellos que nos permiten acceder a los atributos de un objeto y modificarlos. En Javascript se realizan asi:
+
+```js

@@ -15,14 +15,17 @@ class Mascotas{
 
 
     mostrarInformacion(nombre,edad,adopcion){
-        this.Nombre= nombre;
-        this.Edad= edad;
-        this.Adopcion= adopcion;
+        nombre= this.Nombre;
+        edad= this.Edad;
+        adopcion= this.Adopcion;
         Mascotas.cambiarValores(nombre,edad,adopcion)
        
     }
 }
-let perro = new Mascotas("Jacob",5,true);
+
+let perro= new Mascotas("Misael",5,true)
 perro.mostrarInformacion()
+
+
 
 
