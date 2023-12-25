@@ -7,24 +7,24 @@ class Mascotas{
 
     }
 
-    static cambiarValores(Nombre_Mostrar,Edad_Mostrar,Adopcion_Mostrar){
-        console.log(`El nombre es: ${Nombre_Mostrar} y
-        tiene: ${Edad_Mostrar} de edad y su adopcion es
-        ${Adopcion_Mostrar}`);
+    set configAdopcion(adopcion_cambiar){
+    adopcion_cambiar= this.Adopcion;
+    adopcion_cambiar= false;
+    this.Adopcion= adopcion_cambiar;
     }
 
-
-    mostrarInformacion(nombre,edad,adopcion){
-        nombre= this.Nombre;
-        edad= this.Edad;
-        adopcion= this.Adopcion;
-        Mascotas.cambiarValores(nombre,edad,adopcion)
-       
+    get mostrarAdopcion()
+    {
+        let mensaje= "La Adopcion es " + this.Adopcion
+        return mensaje
     }
+    
 }
 
-let perro= new Mascotas("Misael",5,true)
-perro.mostrarInformacion()
+let perro= new Mascotas("Bruno",5);
+perro.configAdopcion= true;
+console.log(perro.mostrarAdopcion)
+
 
 
 

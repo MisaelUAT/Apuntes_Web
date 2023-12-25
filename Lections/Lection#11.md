@@ -136,4 +136,41 @@ Ejemplo:
 ## Getters y Setters
 Son aquellos que nos permiten acceder a los atributos de un objeto y modificarlos. En Javascript se realizan asi:
 
+- **Getters**: Son aquellos que nos permiten acceder a los atributos de un objeto. Se usan para obtener el valor de un atributo (Solo Lectura). En Javascript se realizan asi:
+
 ```js
+class nombreClase {
+    constructor(Atributo1, Atributo2, Atributo3) {
+        this.Atributo1 = Atributo1;
+        this.Atributo2 = Atributo2;
+        this.Atributo3 = Atributo3;
+    }
+    get nombreMetodo() {
+        return this.Atributo1;
+    }
+}
+```
+> El get nunca pide parametros.
+
+Ejemplo:
+
+![Ejemplo](/Assets/img/get.png)
+
+- **Setters**: Son aquellos que nos permiten modificar los atributos de un objeto. Se usan para modificar el valor de un atributo (Solo Escritura). En Javascript se realizan asi:
+
+```js
+class nombreClase {
+    constructor(Atributo1, Atributo2, Atributo3) {
+        this.Atributo1 = Atributo1;
+        this.Atributo2 = Atributo2;
+        this.Atributo3 = Atributo3;
+    }
+    set nombreMetodo(Atributo1) {
+        this.Atributo1 = Atributo1;
+    }
+}
+```
+> El set siempre pide parametros.
+Ejemplo:
+
+![Ejemplo](/Assets/img/set.png)
