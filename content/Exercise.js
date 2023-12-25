@@ -18,14 +18,18 @@ class Mascotas{
         let mensaje= "La Adopcion es " + this.Adopcion
         return mensaje
     }
-    
 }
 
-let perro= new Mascotas("Bruno",5);
-perro.configAdopcion= true;
-console.log(perro.mostrarAdopcion)
+class Mascotas_Minis extends Mascotas{
 
-
+    constructor(Nombre,Edad,Adopcion,Altura){
+        super(Nombre,Edad,Adopcion);
+        this.Altura= Altura;
+    }
+}
+let chihuahua= new Mascotas_Minis("Mini_Bruno",3,false,1.84)
+chihuahua.configAdopcion= true
+console.log(chihuahua.mostrarAdopcion)
 
 
 

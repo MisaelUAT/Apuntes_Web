@@ -174,3 +174,38 @@ class nombreClase {
 Ejemplo:
 
 ![Ejemplo](/Assets/img/set.png)
+
+## Herencia
+Es la caracteristica que permite que los objetos se clasifiquen en grupos jerarquicos. En Javascript se realizan asi:
+- La sintaxis para crear una clase Hija es la misma que para crear una clase Padre. solo con la diferencia de que tenemos que agregar la palabra reservada **extends** y el nombre de la clase Padre.
+
+- La otra sintaxis que vamos a usar par manejar las propiedades del la clase padre es la palabra reservada **super**. Esta palabra reservada nos permite acceder a los atributos y metodos de la clase padre. En Javascript se realizan asi:
+
+```js
+// Clase Padre
+class nombreClasePadre {
+    constructor(Atributo1, Atributo2, Atributo3) {
+        this.Atributo1 = Atributo1;
+        this.Atributo2 = Atributo2;
+        this.Atributo3 = Atributo3;
+    }
+    nombreMetodo() {
+        //Codigo del metodo
+    }
+}
+
+//Clase Hija
+class nombreClaseHija extends nombreClasePadre {
+    constructor(Atributo1, Atributo2, Atributo3, Atributo4) {
+        super(Atributo1, Atributo2, Atributo3);
+        this.Atributo4 = Atributo4;
+    }
+    nombreMetodo() {
+        //Codigo del metodo
+    }
+}
+```
+
+Ejemplo:
+
+![Ejemplo](/Assets/img/herencia.png)
